@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:id="@+id/relative"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/rel2"
+            android:id="@+id/rel">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/str" />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/num"
+                android:layout_below="@+id/str"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/num"
+                android:id="@+id/doob" />
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/rel2"
+            android:layout_toLeftOf="@+id/menu"
+    android:layout_alignParentEnd="true">
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="CLASS"
+                android:gravity="center"
+                android:id="@+id/classname"
+                android:textSize="15sp"/>
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:textSize="50sp"
+                android:id="@+id/roman"
+                android:gravity="center"
+                android:layout_below="@+id/classname" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
